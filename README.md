@@ -34,9 +34,9 @@
 1. Final exam
 
 ##Installation on Linux
-To install Docker on you OS, please visit [Get Docker](https://docs.docker.com/get-docker/). 
+In order to install Docker on your OS, please visit [Get Docker](https://docs.docker.com/get-docker/). 
 
-We are going to install Docker using official Docker repository. In this case we will install it on Debian.
+As an example, we are going to install Docker using official Docker repository. In this case we will install it on Debian using the following commands: 
 ```shell script
 sudo apt-get remove docker docker-engine docker.io containerd runc
 
@@ -64,9 +64,13 @@ Verify that Docker is installed correctly by running the following command:
 ```shell script
 sudo docker run hello-world
 ```
-By default Docker runs only as root user. If you would like to use Docker as a non-root user, you must add your user to the “docker” group with something like:
+By default Docker [runs only as root user](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user). If you would like to use Docker as a non-root user, you must add your user to the “docker” group with something like:
 ```shell script
 sudo usermod -aG docker $USER
 ```
 You need to log out and back in for this to take effect.
-    
+
+> Note: Some Linux distributions need to run post-installation steps to work better with Docker. Please, visit [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/) for more details.
+
+##Overview Docker vocabulary
+
