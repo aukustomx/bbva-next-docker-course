@@ -19,8 +19,7 @@
 1. Create a Docker file with the following specifications:
    1. Use apache(httpd) as the base image
    1. The version of the base image is `2.4.46`
-   1. Copy the index.html file to the Docker image, in /var/www/html/
-   1. Execute the /usr/sbin/httpd command, with the "-D FOREGROUND" option
+   1. Copy the index.html file to the Docker image, in /usr/local/apache2/htdocs/ 
 1. Build the image using the `docker build` command, and tag the image as my-apache-image, version 1.0.0
 1. List the images and ensure that your image is displayed
 1. Run the image as a container and publish the 80 container port in 8080 host port. 
