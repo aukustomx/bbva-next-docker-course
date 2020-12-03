@@ -3,7 +3,7 @@
 1. Create a `my-apache` directory (our context build)
 1. Move into `my-apache` directory
 1. Create a basic html file, called index.html
-```
+    ```
 <!DOCTYPE html>
 <html>
 <body>
@@ -13,7 +13,7 @@
 
 </body>
 </html>
-```
+    ```
 1. Create a Docker file with the following specifications:
    1. Use apache(httpd) as the base image
    1. The version of the base image is `2.4.46`
